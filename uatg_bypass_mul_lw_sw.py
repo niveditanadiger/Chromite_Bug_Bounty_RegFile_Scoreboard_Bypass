@@ -41,7 +41,7 @@ class uatg_bypass_mul_lw_sw(IPlugin):
 
         asm += "\tbne reg_file[5] ,reg_file[6] ,flag\n"
         asm += "\tflag:\n\t addi reg_file[7] ,reg_file[0] ,10\n" # if this branch is taken then it implies that 
-        #                                                           score-boarding hasn't happened properly
+        #                                                           bypassing hasn't happened properly
     
 
     

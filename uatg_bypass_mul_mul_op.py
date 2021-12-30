@@ -4,7 +4,7 @@ from typing import Dict, List, Union, Any
 import random
 
 
-class uatg_regfiles_r4(IPlugin):
+class uatg_bypass_mul_mul_op(IPlugin):
 
     def __init__(self) -> None:
         super().__init__()

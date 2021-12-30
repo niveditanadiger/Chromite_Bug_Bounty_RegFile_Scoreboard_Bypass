@@ -37,8 +37,8 @@ This test checks if the value being read from a register is correct if the same 
 This test checks the behaviour of the core if 2 consecutive instructions have multiply instructions. It verifies if the appropriate values are bypassed for `raw` dependencies for `mul` instructions.
 
 Usefull commands:
-a)Command to generate the assembly file
-      uatg from-config -c mygenerators/uatg/config.ini -v debug
+a)Command to generate the assembly file:
+      **uatg from-config -c mygenerators/uatg/config.ini -v debug**
  
 
 References:

@@ -35,7 +35,7 @@ class uatg_regfiles_r1(IPlugin):
         
         for val in range(2,20,2):
             asm += f"\taddi {reg_file[0]} ,{reg_file[0]} ,val\n"
-            asm += f"\tbne f{reg_file[0]} ,{reg_file[1]} ,flag\n"
+            asm += f"\tbne {reg_file[0]} ,{reg_file[1]} ,flag\n"
             #if the register zero takes a nonzero value then ,register7 takes the value of 10
             #thus giving us the indication of bug!!
             asm += f"\tflag:\n\t addi {reg_file[7]} ,{reg_file[1]} ,10\n"

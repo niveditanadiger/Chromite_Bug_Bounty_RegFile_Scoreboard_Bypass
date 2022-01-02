@@ -20,24 +20,24 @@ The following python files test the above modules:
 
 This test verifies if the register x0 gets updated for any non-zero value(since x0 is supposed to be hardwired to zero according to [RISCV ISA](https://riscv.org/)). If it does, then the ISR jumps to flag branch implying that the test fails. 
 
-2.uatg_bypass_alu_alu_op.py
+2.uatg_bypass_alu_alu.py
 
 This test has two `raw` dependent consecutive alu instructions. It checks if the appropriate value is bypassed by the scoreboard for the calculation of error-free output. If the final value has an error, it jumps to the flag branch implying that the test fails.
 
-3.uatg_bypass_mul_lw_sw.py
+3.uatg_bypass_mul_load_store.py
 
 This test has a multiply instruction which might take multiple clock cycles in the EX-stage ([Mbox](https://gitlab.com/incoresemi/core-generators/chromite/-/tree/master/src/m_ext)), expecting the following instructions to be stalled if they are dependent on the output of `mul` instruction. If the following instruction interprets the incorrect value, then ISR jumps to flag branch.
 
-4.uatg_reg_files_bypass_alu_alu_ops.py
+4.uatg_bypass_regfiles.py
 
 This test checks if the value being read from a register is correct if the same register is committed in the same cycle. According to [Hennessy and Patterson](http://home.ustc.edu.cn/~louwenqi/reference_books_tools/Computer%20Organization%20and%20Design%20RISC-V%20edition.pdf), the register is supposed to commit first and then read the same register, but this would generate alot of attributes leading to an inefficient design. To avoid this, chromite core has introduced a multiplexor to simply bypass the incoming `write_data` to the data that had to be read from the register file. This test writes the final output to the signature file.
 
-5.uatg_regfiles_r4.py
+5.uatg_bypass_mul_mul.py
 
 This test checks the behaviour of the core if 2 consecutive instructions have multiply instructions. It verifies if the appropriate values are bypassed for `raw` dependencies for `mul` instructions.
 
-Usefull commands:
-a)Command to generate the assembly file:
+
+--> Command to generate the assembly file:
       **uatg from-config -c mygenerators/uatg/config.ini -v debug**
  
 

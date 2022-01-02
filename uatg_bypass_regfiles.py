@@ -46,9 +46,9 @@ class uatg_bypass_regfiles(IPlugin):
         sig_bytes = 0
 
         
-        for val in range(-10,20,2):
-            asm += f"\taddi {reg_file[3]} ,{reg_file[3]} ,val\n"
-            asm += f"\taddi {reg_file[4]} ,{reg_file[4]} ,7\n"
+        for val in range(-10,20,5):
+            asm += f"\taddi {reg_file[3]} ,{reg_file[3]} ," + str(val)
+            asm += f"\n\taddi {reg_file[4]} ,{reg_file[4]} ,7\n"
             asm += f"\tadd {reg_file[31]} ,{reg_file[3]} ,{reg_file[4]}\n"
             
             # adjust the offset. reset to 0 if it crosses 2048 and
@@ -85,7 +85,8 @@ class uatg_bypass_regfiles(IPlugin):
             #'name_postfix': inst
             })
         return test_dict
-        
+    #after all the manual calculations, signature file should have value of 57
+    
     def check_log(self, log_file_path, reports_dir) -> bool:
         return False
 

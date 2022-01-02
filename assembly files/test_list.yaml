@@ -1,208 +1,80 @@
+uatg_bypass_alu_alu-001:
+  asm_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_bypass_alu_alu-001/uatg_bypass_alu_alu-001.S
+  cc: riscv64-unknown-elf-gcc
+  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
+    -fvisibility=hidden '
+  compile_macros: [XLEN=64]
+  extra_compile: []
+  generator: uatg
+  include: [/home/nivedita/.local/lib/python3.8/site-packages/uatg/env/, /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../]
+  isa: RV64IMACSUZicsr_Zifencei
+  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
+  linker_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../link.ld
+  mabi: lp64
+  march: rv64imac
+  result: Unavailable
+  work_dir: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_bypass_alu_alu-001
+uatg_bypass_mul_load_store-001:
+  asm_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_bypass_mul_load_store-001/uatg_bypass_mul_load_store-001.S
+  cc: riscv64-unknown-elf-gcc
+  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
+    -fvisibility=hidden '
+  compile_macros: [XLEN=64]
+  extra_compile: []
+  generator: uatg
+  include: [/home/nivedita/.local/lib/python3.8/site-packages/uatg/env/, /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../]
+  isa: RV64IMACSUZicsr_Zifencei
+  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
+  linker_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../link.ld
+  mabi: lp64
+  march: rv64imac
+  result: Unavailable
+  work_dir: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_bypass_mul_load_store-001
+uatg_bypass_mul_mul-001:
+  asm_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_bypass_mul_mul-001/uatg_bypass_mul_mul-001.S
+  cc: riscv64-unknown-elf-gcc
+  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
+    -fvisibility=hidden '
+  compile_macros: [XLEN=64]
+  extra_compile: []
+  generator: uatg
+  include: [/home/nivedita/.local/lib/python3.8/site-packages/uatg/env/, /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../]
+  isa: RV64IMACSUZicsr_Zifencei
+  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
+  linker_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../link.ld
+  mabi: lp64
+  march: rv64imac
+  result: Unavailable
+  work_dir: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_bypass_mul_mul-001
+uatg_bypass_regfiles-001:
+  asm_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_bypass_regfiles-001/uatg_bypass_regfiles-001.S
+  cc: riscv64-unknown-elf-gcc
+  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
+    -fvisibility=hidden '
+  compile_macros: [XLEN=64]
+  extra_compile: []
+  generator: uatg
+  include: [/home/nivedita/.local/lib/python3.8/site-packages/uatg/env/, /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../]
+  isa: RV64IMACSUZicsr_Zifencei
+  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
+  linker_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../link.ld
+  mabi: lp64
+  march: rv64imac
+  result: Unavailable
+  work_dir: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_bypass_regfiles-001
 uatg_regfiles_r1-001:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-001/uatg_regfiles_r1-001.S
+  asm_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_regfiles_r1-001/uatg_regfiles_r1-001.S
   cc: riscv64-unknown-elf-gcc
   cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
     -fvisibility=hidden '
   compile_macros: [XLEN=64]
   extra_compile: []
   generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
+  include: [/home/nivedita/.local/lib/python3.8/site-packages/uatg/env/, /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../]
   isa: RV64IMACSUZicsr_Zifencei
   linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
+  linker_file: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/../link.ld
   mabi: lp64
   march: rv64imac
   result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-001
-uatg_regfiles_r1-002:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-002/uatg_regfiles_r1-002.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-002
-uatg_regfiles_r1-003:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-003/uatg_regfiles_r1-003.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-003
-uatg_regfiles_r1-004:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-004/uatg_regfiles_r1-004.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-004
-uatg_regfiles_r1-005:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-005/uatg_regfiles_r1-005.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-005
-uatg_regfiles_r1-006:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-006/uatg_regfiles_r1-006.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-006
-uatg_regfiles_r1-007:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-007/uatg_regfiles_r1-007.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-007
-uatg_regfiles_r1-008:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-008/uatg_regfiles_r1-008.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-008
-uatg_regfiles_r1-009:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-009/uatg_regfiles_r1-009.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r1-009
-uatg_regfiles_r2-001:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r2-001/uatg_regfiles_r2-001.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r2-001
-uatg_regfiles_r3-001:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r3-001/uatg_regfiles_r3-001.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r3-001
-uatg_regfiles_r4-001:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r4-001/uatg_regfiles_r4-001.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r4-001
-uatg_regfiles_r5-001:
-  asm_file: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r5-001/uatg_regfiles_r5-001.S
-  cc: riscv64-unknown-elf-gcc
-  cc_args: '-mcmodel=medany -static -std=gnu99 -O2 -fno-common -fno-builtin-printf
-    -fvisibility=hidden '
-  compile_macros: [XLEN=64]
-  extra_compile: []
-  generator: uatg
-  include: [/home/sushanth/uatg/uatg/env/, /home/sushanth/chromite-core-verif/mywork/regfiles/../]
-  isa: RV64IMACSUZicsr_Zifencei
-  linker_args: -static -nostdlib -nostartfiles -lm -lgcc -T
-  linker_file: /home/sushanth/chromite-core-verif/mywork/regfiles/../link.ld
-  mabi: lp64
-  march: rv64imac
-  result: Unavailable
-  work_dir: /home/sushanth/chromite-core-verif/mywork/regfiles/uatg_regfiles_r5-001
+  work_dir: /home/nivedita/chromite-core-verif/mywork/reg_file_scoreboard_bypass/uatg_regfiles_r1-001
